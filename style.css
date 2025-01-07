@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  /* Colors */
+  --color-primary: #fd6e0a;
+  --color-dark-01: #000000;
+  --color-dark-02: #181818;
+  --color-dark-03: #474747;
+  --color-dark-04: #757575;
+  --color-light-01: #ffffff;
+  --color-light-02: #fff8f3;
+
+  /* Typography */
+  --font-size-base: 20px;
+  --font-size-small: 18px;
+  --font-size-extrasmall: 16px;
+  --font-size-large: 25px;
+  --font-size-extralarge: 30px;
+  --font-size-ultralarge: 35px;
+  --font-size-megalarge: 45px;
+  --font-size-headline: 85px;
+  --font-size-mainheadline: 100px;
+
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-semibold: 600;
+  --font-weight-regular: 400;
+
+  /* Spacing */
+
+  /* Breakpoints */
+}
+
+/* 
+Button : 1 W~ H64 Rad-5 Alt - 1
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  /*font-optical-sizing: auto;*/ //*! New 🆕 */
+}
+
+a,
+a:visited {
+  /* color: black; */
+  text-decoration: none;
+}
+
+button {
+  background: var(--color-primary);
+  padding: 18px 35px;
+  border: none;
+  border-radius: 5px;
+
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-light-01);
+}
+
+header {
+  background: var(--color-light-02);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 50px 0;
+}
+
+nav h3 {
+  font-size: var(--font-size-megalarge);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-dark-02);
+  letter-spacing: 0px;
+}
+
+nav span {
+  color: var(--color-primary);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul > * + * {
+  margin-left: 45px;
+}
+
+nav a {
+  color: var(--color-dark-03);
+}
