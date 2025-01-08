@@ -25,15 +25,23 @@
   border-radius: 5px;
   border: none;
 }
+
+/* Header  */
+
+header {
+  background-image: url(./assets/developer.png), url('./assets/header_bg.png');
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
 /* Nav Styles */
 
 body {
-  background: black;
-  color: whitesmoke;
+  /* background: black;
+  color: whitesmoke; */
 }
 
 nav {
-  /* background: red; */
   display: flex;
 
   align-items: center;
@@ -59,4 +67,29 @@ nav ul li {
 nav li a {
   text-decoration: none;
   font-size: 20px;
+}
+
+/* Banner Style */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px 0 200px;
+}
+
+.bannerContent {
+  max-width: 580px;
+}
+
+.bannerGreetings {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.bannerTitle {
+  font-size: 85px;
+  font-weight: bold;
+}
+
+.bannerProfilePic {
+  width: 580px;
 }
