@@ -1,2 +1,2 @@
-# developer portfolio
+# Developer Portfolio
  A Demo Developer Portfolio
