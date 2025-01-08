@@ -91,7 +91,7 @@ header {
 
 .container {
   max-width: 1200px;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   margin: 0 auto;
 }
 
@@ -206,3 +206,92 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
+/* What I do */
+.technologies {
+  text-align: center;
+}
+
+.technologies h1 {
+  margin-bottom: 30px;
+}
+
+.technologies p {
+  font-size: var(--font-size-small);
+  color: var(--color-dark-04);
+  line-height: 1.5;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+  margin: 50px 0;
+}
+
+.card {
+  text-align: left;
+  background: var(--color-light-01);
+  padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card h5 {
+  margin: 30px 0 20px 0;
+}
+
+.card p {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-dark-04);
+  line-height: 1.5;
+  box-shadow: var(--color-dark-01);
+}
+
+/* Resume */
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.resume h1 {
+  margin: 0 0 110px 0;
+}
+
+.resume button {
+  margin: 50px 0 0;
+}
+
+.flexer {
+  display: flex;
+}
+
+.edu {
+  margin-right: 24px;
+}
+
+.eduCard {
+  padding: 30px 0;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.eduCard h4 {
+  font-size: var(--font-size-large);
+  color: var(--color-dark-03);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 10px;
+}
+
+.eduCard h5 {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-dark-04);
+  margin-bottom: 20px;
+}
+
+.eduCard p {
+  font-size: var(--font-size-extrasmall);
+  color: var(--color-dark-04);
+}
+
+/* Footer */
