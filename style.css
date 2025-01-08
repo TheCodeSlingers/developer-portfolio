@@ -1,341 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-:root {
-  /* Colors */
-  --color-primary: #fd6e0a;
-  --color-dark-01: #000000;
-  --color-dark-02: #181818;
-  --color-dark-03: #474747;
-  --color-dark-04: #757575;
-  --color-light-01: #ffffff;
-  --color-light-02: #fff8f3;
-
-  /* Typography */
-  --font-size-base: 20px;
-  --font-size-small: 18px;
-  --font-size-extrasmall: 16px;
-  --font-size-large: 25px;
-  --font-size-extralarge: 30px;
-  --font-size-ultralarge: 35px;
-  --font-size-megalarge: 45px;
-  --font-size-headline: 85px;
-  --font-size-mainheadline: 100px;
-
-  --font-weight-bold: 700;
-  --font-weight-extrabold: 800;
-  --font-weight-semibold: 600;
-  --font-weight-regular: 400;
-
-  /* Spacing */
-
-  /* Breakpoints */
+.open-sans-normal {
+  font-family: 'Open Sans', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
 }
 
-/* 
-Button : 1 W~ H64 Rad-5 Alt - 1
-*/
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
+/* Shared Style */
+.text-primary {
+  color: #fd6e0a;
 }
+
+.dark-2 {
+  color: #474747;
+}
+
+.btn-primary {
+  background: #fd6e0a;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 18px 35px;
+  border-radius: 5px;
+  border: none;
+}
+/* Nav Styles */
 
 body {
-  font-family: 'Open Sans', serif;
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-regular);
-  /*font-optical-sizing: auto;*/ //*! New 🆕 */
-}
-
-a,
-a:visited {
-  /* color: black; */
-  text-decoration: none;
-}
-
-/* img {
-  display: block;
-  width: 100%;
-  height: auto;
-} */
-
-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-  background: var(--color-primary);
-  padding: 18px 35px;
-  border: none;
-  border-radius: 5px;
-
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-light-01);
-}
-
-.alt {
-  background: transparent;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-}
-
-header {
-  background: var(--color-light-02);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+  background: black;
+  color: whitesmoke;
 }
 
 nav {
+  /* background: red; */
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
-
-  padding: 50px 0;
+  justify-content: space-between;
+  margin: 50px 200px;
 }
 
-nav h3 {
-  font-size: var(--font-size-megalarge);
-  font-weight: var(--font-weight-extrabold);
-  color: var(--color-dark-02);
-  letter-spacing: 0px;
-}
-
-nav span {
-  color: var(--color-primary);
+.nav-title {
+  font-weight: 800;
+  font-size: 45px;
 }
 
 nav ul {
   display: flex;
   align-items: center;
+}
+
+nav ul li {
   list-style: none;
+  margin-right: 50px;
 }
 
-nav ul > * + * {
-  margin-left: 45px;
-}
-
-nav a {
-  color: var(--color-dark-03);
-}
-
-/* Hero Section */
-
-main {
-  background-color: var(--color-light-02);
-}
-
-.hero {
-  display: flex;
-  justify-content: space-between;
-}
-
-.hero-cta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-
-  /* max-width: 585px; */
-}
-
-.hero-cta h2 {
-  font-size: var(--font-size-megalarge);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-dark-03);
-}
-
-.hero-cta h1 {
-  font-size: var(--font-size-mainheadline);
-  font-weight: var(--font-weight-bold);
-  margin: 0 0 0 -6px;
-}
-
-.hero-cta h5 {
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-dark-04);
-  line-height: 1.5;
-}
-
-.cta {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 30px;
-}
-
-.hero-image {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-image .heroBg {
-  position: absolute;
-  top: 160px;
-  left: -250px;
-  z-index: -1;
-}
-
-/* About Me */
-
-section {
-  margin: 130px auto;
-}
-
-.aboutMe {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 1140px;
-  border: 156px solid var(--color-light-02);
-  margin: 0 auto;
-  text-align: center;
-}
-
-.contact {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* What I do */
-.technologies {
-  text-align: center;
-}
-
-.technologies h1 {
-  margin-bottom: 30px;
-}
-
-.technologies p {
-  font-size: var(--font-size-small);
-  color: var(--color-dark-04);
-  line-height: 1.5;
-}
-
-.cards {
-  display: flex;
-  gap: 24px;
-  margin: 50px 0;
-}
-
-.card {
-  text-align: left;
-  background: var(--color-light-01);
-  padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.card h5 {
-  margin: 30px 0 20px 0;
-}
-
-.card p {
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-dark-04);
-  line-height: 1.5;
-  box-shadow: var(--color-dark-01);
-}
-
-/* Resume */
-.resume {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.resume h1 {
-  margin: 0 0 110px 0;
-}
-
-.resume h3 {
-  font-size: var(--font-size-extralarge);
-  color: var(--color-dark-03);
-}
-
-.resume button {
-  margin: 50px 0 0;
-}
-
-.flexer {
-  display: flex;
-}
-
-.edu {
-  margin-right: 24px;
-}
-
-.eduCard {
-  padding: 30px 0;
-  border-bottom: 1px solid #d1d1d1;
-}
-
-.eduCard h4 {
-  font-size: var(--font-size-large);
-  color: var(--color-dark-03);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: 10px;
-}
-
-.eduCard h5 {
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-dark-04);
-  margin-bottom: 20px;
-}
-
-.eduCard p {
-  font-size: var(--font-size-extrasmall);
-  color: var(--color-dark-04);
-}
-
-/* Footer */
-footer {
-  background-color: var(--color-light-02);
-}
-
-.connect {
-  max-width: 550px;
-  margin: 0 110px 0 0;
-}
-
-.connect p {
-  font-size: var(--font-size-extrasmall);
-  margin: 20px 0 30px 0;
-}
-
-.contactMe {
-  padding: 130px;
-}
-
-.socials {
-  display: flex;
-  gap: 24px;
-}
-
-.message h2 {
-  margin-bottom: 28px;
-}
-
-input {
-  min-width: 450px;
-  min-height: 64px;
-  margin-bottom: 24px;
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
-}
-
-#message {
-  min-height: 180px;
-  text-align: start;
+nav li a {
+  text-decoration: none;
+  font-size: 20px;
 }
