@@ -29,7 +29,8 @@
 /* Header  */
 
 header {
-  background-image: url(./assets/developer.png), url('./assets/header_bg.png');
+  /* background-image:  url('./assets/header_bg.png'); */
+  background-image: url(./assets/developer.png), url(./assets/test.svg);
   background-repeat: no-repeat;
   background-position: top left, bottom right;
 }
